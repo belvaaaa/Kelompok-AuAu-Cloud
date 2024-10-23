@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelompok AuAu-Cloud</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <h2 class="logo-text">AuAu</h2>
+        </a>
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+        </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="section-content">
+          <div class="hero-details">
+            <h2 class="title">Hallo Semua</h2>
+            <h3 class="subtitle">Perkenalkan Kami Dari Kelompok AuAu</h3>
+            <p class="description">Ini web kami Pada Mata Kuliah Cloud Computing.</p>
+
+            <div class="buttons">
+              <a href="#" class="button order-now">22TK01</a>
+            </div>
+          </div>
+          <div class="hero-image-wrapper">
+            <img src="{{ url_for('static', filename='2.jpg') }}" alt="Coffee" class="hero-image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="{{ url_for('static', filename='musa.jpeg') }}" alt="About" class="about-image" />
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">Mugni Saleh Maheswara</h2>
+            <h3 class="section-th3">22.83.0814 |   S1-Teknik Komputer</h3>
+            <p class="text">
+              Ibuku di surga, tak telpon wa calling doang.
+              Udah mencoba telpon biasa pun gak masuk-masuk. 
+              Gak ada sutet kah di surga? Aku pun bingung caranya biar bisa telpon
+            </p>
+            <div class="social-link-list">
+              <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="{{ url_for('static', filename='far.jpeg') }}" alt="About" class="about-image" />
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">Faradilla Belva Nurwansya</h2>
+            <h3 class="section-th3">22.83.0800 |   S1-Teknik Komputer</h3>
+            <p class="text">
+              Aku adalah mahasiswa semester 5 di Universitas Amikom Yogyakarta dari kelas 22TK01. 
+              Meskipun menghadapi tantangan di dunia perkuliahan, aku selalu berusaha keras untuk mencapai impiannya, menjadi contoh inspiratif bagi orang-orang di sekitar. 
+              Keberanianku untuk meraih pendidikan yang lebih tinggi menunjukkan betapa berharganya cita-cita.
+            </p>
+            <div class="social-link-list">
+              <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="{{ url_for('static', filename='jho.jpeg') }}" alt="About" class="about-image" />
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">Meyzel Jhofany Yuana</h2>
+            <h3 class="section-th3">22.83.0823 |   S1-Teknik Komputer</h3>
+            <p class="text">
+              Halo, saya jhofan  
+              Saat ini menempuh studi di jurusan Teknik Komputer di Universitas Amikom Yogyakarta. 
+              saya katanya dikenal sebagai sosok yang cerdas dan penuh semangat, selalu antusias menjelajahi teknologi baru. 
+              Selain belajar, aku senang berbagi pengetahuan dengan teman-teman, terutama tentang pemrograman dan teknologi.
+            </p>
+            <div class="social-link-list">
+              <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="{{ url_for('static', filename='Danu.jpg') }}" alt="About" class="about-image" />
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">Firma Danu Kusuma</h2>
+            <h3 class="section-th3">22.83.0806 |   S1-Teknik Komputer</h3>
+            <p class="text">
+              Anak bungsu yang merantau untuk kuliah adalah sosok yang penuh semangat dan harapan. Dengan segala keberanian, ia meninggalkan kampung halaman untuk mengejar cita-cita di kota besar. 
+              Meski jauh dari keluarga, ia belajar mandiri dan beradaptasi dengan lingkungan baru. Setiap hari, ia menghadapi tantangan akademis dan sosial, berusaha sebaik mungkin untuk meraih impiannya. 
+              Di balik senyumnya yang ceria, ada kerinduan akan rumah, namun semangatnya untuk sukses selalu menguatkan langkahnya.
+            </p>
+            <div class="social-link-list">
+              <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Gallery section -->
+      <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-content">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img src="{{ url_for('static', filename='7.jpg') }}" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="{{ url_for('static', filename='3.jpg') }}" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="{{ url_for('static', filename='4.jpg') }}" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="{{ url_for('static', filename='5.jpg') }}" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="{{ url_for('static', filename='6.jpg') }}" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="{{ url_for('static', filename='7.jpg') }}" alt="Gallery Image" class="gallery-image" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    
+      <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">AuAu Group</p>
+          <p class="policy-text">
+            <a href="#" class="policy-link">Universitas Amikom Yogyakarta</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
